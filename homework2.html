@@ -1,53 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Homework 2: Depth of Field and Camera RAW</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #380000, #5c0d0d, #7f1f1f);
+            font-family: "Georgia", serif;
+            color: #fceaea;
+            text-align: center;
+        }
+
+        h1 {
+            padding-top: 40px;
+            font-size: 48px;
+            color: #ffe5e5;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 34px;
+            color: #ffcccc;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffeaea;
+        }
+
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .item {
+            width: 40%;
+            min-width: 280px;
+            background: rgba(255, 235, 235, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 18px rgba(255, 200, 200, 0.25);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            border: 4px solid #ffdddd;
+        }
+
+        p {
+            width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            font-size: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 40px 0;
+            font-size: 22px;
+            color: #ffe6e6;
+            background-color: #7a0000;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0px 0px 12px rgba(255, 140, 140, 0.4);
+        }
+
+        a:hover {
+            background-color: #a30000;
+        }
+
+        hr {
+            margin-top: 50px;
+            border: none;
+            border-top: 2px solid #ffbcbc;
+            width: 80%;
+        }
+    </style>
 </head>
+
 <body>
 
 <h1>Homework 2: Depth of Field and Camera RAW</h1>
 
+<!-- PART 1 -->
 <h2>Part 1: Depth of Field</h2>
 
-<h3>Deep Depth of Field</h3>
-<img src="deep_dof.jpg" alt="Deep depth of field photo" width="50%">
+<div class="gallery-row">
+    <div class="item">
+        <h3>Deep Depth of Field</h3>
+        <img src="deep_dof.jpg" alt="Deep depth of field photo">
+    </div>
 
-<h3>Shallow Depth of Field</h3>
-<img src="shallow_dof.jpg" alt="Shallow depth of field photo" width="50%">
+    <div class="item">
+        <h3>Shallow Depth of Field</h3>
+        <img src="shallow_dof.jpg" alt="Shallow depth of field photo">
+    </div>
+</div>
 
-<h3>Photoshopped Field Blur</h3>
-<img src="field_blur.jpg" alt="Field blur Photoshop edit" width="50%">
+<div class="gallery-row">
+    <div class="item">
+        <h3>Photoshopped Field Blur</h3>
+        <img src="field_blur.jpg" alt="Field blur Photoshop edit">
+    </div>
+</div>
 
 <hr>
 
+<!-- PART 2 -->
 <h2>Part 2: Camera Raw</h2>
 
-<h3>Tables Before</h3>
-<img src="tables_before.jpg" alt="Tables before Camera Raw edit" width="50%">
+<div class="gallery-row">
+    <div class="item">
+        <h3>Tables Before</h3>
+        <img src="tables_before.jpg" alt="Tables before Camera Raw edit">
+    </div>
 
-<h3>Tables After</h3>
-<img src="tables_after.jpg" alt="Tables after Camera Raw edit" width="50%">
+    <div class="item">
+        <h3>Tables After</h3>
+        <img src="tables_after.jpg" alt="Tables after Camera Raw edit">
+    </div>
+</div>
 
-<h3>Floor Before</h3>
-<img src="floor_before.jpg" alt="Floor before Camera Raw edit" width="50%">
+<div class="gallery-row">
+    <div class="item">
+        <h3>Floor Before</h3>
+        <img src="floor_before.jpg" alt="Floor before Camera Raw edit">
+    </div>
 
-<h3>Floor After</h3>
-<img src="floor_after.jpg" alt="Floor after Camera Raw edit" width="50%">
+    <div class="item">
+        <h3>Floor After</h3>
+        <img src="floor_after.jpg" alt="Floor after Camera Raw edit">
+    </div>
+</div>
 
 <hr>
 
 <h2>Reflection</h2>
-<p>When I think about the human state and nature, images of human-made objects come to mind. Why do we create what we make, and is it good for us or bad? Humans are fascinating creatures, and they love to create chaos, but the aftermath of it is often blurry.</p>
 
-<p>The first images convey how humans can exploit essentials by destroying everything else. Plastic is everywhere, and its debris keeps growing and polluting our environment. We worry about it in our hearts, but the actions tell otherwise. With this week’s assignment, I could picture a little glimpse of it in the center. This was done with a shallow depth of field, keeping the bottle sharp while the background blurred, and with a deep depth of field, showing the subject and background.</p>
+<p>
+When I think about the human state and nature, images of human-made objects come to mind. Why do we create what we make, and is it good for us or bad? Humans are fascinating creatures, and they love to create chaos, but the aftermath of it is often blurry.
+</p>
 
-<p>With the other two images, I show the nature of two types of chaos. The raw image of the table in the center does not look ideal with the trash on it or the wall that has cracks with the fliers ripped on it, but it tells a story of how things that aren’t perfect can still be delivered as an interesting story with little “filter” on.</p>
+<p>
+The first images convey how humans can exploit essentials by destroying everything else. Plastic is everywhere, and its debris keeps growing and polluting our environment. We worry about it in our hearts, but the actions tell otherwise. With this week’s assignment, I could picture a little glimpse of it in the center. This was done with a shallow depth of field, keeping the bottle sharp while the background blurred, and with a deep depth of field, showing the subject and background.
+</p>
 
-<p>Same as the following image, it is dark and confusing; the light in the middle reflects the scratches on the floor, created by humans. But there is a hope with the light. We still have to look forward, even if it seems uncertain or unclear; we must continue walking and fighting. The raw image doesn’t reflect it as much as the photoshopped image. It allowed me to convey those emotions better.</p>
+<p>
+With the other two images, I show the nature of two types of chaos. The raw image of the table in the center does not look ideal with the trash on it or the wall that has cracks with the fliers ripped on it, but it tells a story of how things that aren’t perfect can still be delivered as an interesting story with little “filter” on.
+</p>
 
-<hr>
+<p>
+Same as the following image, it is dark and confusing; the light in the middle reflects the scratches on the floor, created by humans. But there is a hope with the light. We still have to look forward, even if it seems uncertain or unclear; we must continue walking and fighting. The raw image doesn’t reflect it as much as the photoshopped image. It allowed me to convey those emotions better.
+</p>
 
 <p><a href="index.html">Go back to homepage</a></p>
 
 </body>
 </html>
+

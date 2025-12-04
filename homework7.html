@@ -1,27 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Homework 7</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Georgia", serif;
+            color: #3d2f28;
+            text-align: center;
+            background: linear-gradient(180deg, #d6c4b1, #e8dbc9, #f6efe7);
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 42px;
+            color: #3d2e25;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 30px;
+            color: #3d2e25;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 0px 20px rgba(90, 70, 50, 0.25);
+        }
+
+        .img-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .reflection p {
+            text-align: left;
+            max-width: 750px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+            color: #3e2f28;
+            font-size: 18px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 22px;
+            background-color: #a08674;
+            color: #fef9f4;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(100, 80, 65, 0.3);
+        }
+
+        a:hover {
+            background-color: #8b7263;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Homework 7</h1>
 
-<h2>Illustrated Environment</h2>
+    <h1>Homework 7</h1>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  <img src="homework7before.jpg" alt="Original light" width="500">
-  <img src="homework7after.png" alt="Illustrated light" width="500">
-  <img src="optional1.jpg" alt="Original interior" width="500">
-  <img src="optional2.png" alt="Illustrated interior" width="500">
-</div>
+    <h2>Illustrated Environment</h2>
 
+    <div class="img-grid">
+        <img src="homework7before.jpg" alt="Original light">
+        <img src="homework7after.png" alt="Illustrated light">
+        <img src="optional1.jpg" alt="Original interior">
+        <img src="optional2.png" alt="Illustrated interior">
+    </div>
 
+    <h2>Reflection</h2>
 
+    <div class="reflection">
+        <p>As much as I admire complicated, dramatic interiors, I love simplicity and the idea of how you can find comfort even in simple things. The original image contains just a plain wall and the light that illuminates the room, but I reflected it through warmth. I wanted to show that something can be worth noting even in simple, tiny details of our everyday life. When I saw the initial image, I remembered the room from my countryside house that had the exact same ceiling light, which also awoke nostalgic feelings. It's funny how tiny things can remind you of your experiences.</p>
 
-<h2>Reflection</h2>
-<p>As much as I admire complicated, dramatic interiors, I love simplicity and the idea of how you can find comfort even in simple things. The original image contains just a plain wall and the light that illuminates the room, but I reflected it through warmth. I wanted to show that something can be worth noting even in simple, tiny details of our everyday life. When I saw the initial image, I remembered the room from my countryside house that had the exact same ceiling light, which also awoke nostalgic feelings. It's funny how tiny things can remind you of your experiences.</p> <p>The illustrated version reminds me of a scene from a cartoon, where a character enters the room, lights the bulb, and the camera points to the exact spot of the light, in a 16:9 frame. I imported the original image into Adobe Illustrator. I created layers for each subject, such as wall, bulb, socket, filament, and the shadow. I used a rectangle shape for the wall, and then started building the bulb itself. Two shapes I used were an ellipse and a rectangle. After putting everything in place, I lowered the opacity of the shadow, and I chose three colors from the triad palette to represent the contrast and harmony, which I also used in my second, optional illustration. In the second illustration, I mainly focused on shapes by removing the textures, details, and the balance between light and comfort. </p>
+        <p>The illustrated version reminds me of a scene from a cartoon, where a character enters the room, lights the bulb, and the camera points to the exact spot of the light, in a 16:9 frame. I imported the original image into Adobe Illustrator. I created layers for each subject, such as wall, bulb, socket, filament, and the shadow. I used a rectangle shape for the wall, and then started building the bulb itself. Two shapes I used were an ellipse and a rectangle. After putting everything in place, I lowered the opacity of the shadow, and I chose three colors from the triad palette to represent the contrast and harmony, which I also used in my second, optional illustration. In the second illustration, I mainly focused on shapes by removing the textures, details, and the balance between light and comfort.</p>
+    </div>
 
+    <a href="index.html">Go back to homepage</a>
 
- <p><a href="index.html">Go back to homepage</a></p>
 </body>
 </html>

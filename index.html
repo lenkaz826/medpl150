@@ -11,15 +11,45 @@
             font-family: "Georgia", serif;
             color: #0d1b0f;
             text-align: center;
-            background: linear-gradient(180deg, #28a745, #5edc6e, #a8ffb6);
+
+            /* 🔮 Animated Gradient Background */
+            background: linear-gradient(180deg,
+                #8b5fbf,   /* purple */
+                #baffc9,   /* mint green */
+                #ffe7c7,   /* beige */
+                #79a7d3,   /* blue */
+                #c75a00    /* warm orange */
+            );
+            background-size: 600% 600%;
+
+            /* ⏱️ Start gradient animation AFTER title appears */
+            animation: gradientShift 18s ease infinite;
+            animation-delay: 2.5s;
         }
 
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 50%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ✨ Title fade-in */
         h1 {
             margin-top: 40px;
             font-size: 48px;
             color: #0d1b0f;
-            text-decoration: underline;
-            text-underline-offset: 6px;
+            /* no underline */
+            text-decoration: none;
+
+            opacity: 0;
+            animation: fadeInTitle 2.5s ease forwards;
+        }
+
+        @keyframes fadeInTitle {
+            0%   { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         .about p {
@@ -81,10 +111,8 @@
 
 <h2>Assignments</h2>
 
-<!-- SINGLE BUTTON VERSION FOR READINGS -->
 <a href="readings.html">Readings</a>
 
-<!-- HOMEWORK BUTTONS -->
 <a href="homework1.html">Resizing Images & Tonal Range</a>
 <a href="homework2.html">Depth of Field</a>
 <a href="homework3.html">Photomontage</a>
@@ -94,9 +122,7 @@
 <a href="homework8.html">Animated GIFs</a>
 <a href="homework9.html">Data Visualization</a>
 
-<!-- INTERACTIVE STORY BUTTON -->
-<a href="https://lenkaz826.github.io/interactivestorymedpl150/"
-   target="_blank">
+<a href="https://lenkaz826.github.io/interactivestorymedpl150/" target="_blank">
    Interactive Story
 </a>
 

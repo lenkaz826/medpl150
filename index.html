@@ -12,16 +12,16 @@
             color: #0d1b0f;
             text-align: center;
 
-            /* 🔮 Animated Gradient Background */
+            /* 🌈 FULL-PAGE ANIMATED GRADIENT */
             background: linear-gradient(180deg,
                 #8b5fbf,   /* purple */
-                #baffc9,   /* mint green */
+                #baffc9,   /* mint */
                 #ffe7c7,   /* beige */
                 #79a7d3,   /* blue */
-                #c75a00    /* warm orange */
+                #c75a00    /* orange */
             );
-            background-size: 600% 600%;
-            animation: gradientShift 18s ease infinite;
+            background-size: 500% 500%;
+            animation: gradientShift 20s ease-in-out infinite;
         }
 
         @keyframes gradientShift {
@@ -32,7 +32,7 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* ✨ Title fade-in */
+        /* ✨ Fade-in name animation */
         h1 {
             margin-top: 40px;
             font-size: 48px;
@@ -47,17 +47,7 @@
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        /* 📦 Centered soft box for all writing */
-        .content-box {
-            max-width: 900px;
-            margin: 30px auto 50px;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 25px 30px 35px;
-            border-radius: 14px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
-            text-align: center;
-        }
-
+        /* 🟣 ABOUT SECTION (NO TEXT CHANGED) */
         .about p {
             text-align: left;
             max-width: 850px;
@@ -67,52 +57,49 @@
             font-size: 18px;
         }
 
+        /* 🎨 BUTTONS THAT MATCH BACKGROUND + GLOW */
+        a {
+            display: inline-block;
+            margin: 12px;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+
+            /* Buttons use SAME gradient animation as background */
+            background: linear-gradient(180deg,
+                #8b5fbf,
+                #baffc9,
+                #ffe7c7,
+                #79a7d3,
+                #c75a00
+            );
+            background-size: 500% 500%;
+            animation: gradientShift 20s ease-in-out infinite;
+
+            /* Glow */
+            color: #000;
+            box-shadow: 0 0 18px rgba(255, 255, 255, 0.45);
+            transition: 0.3s ease;
+        }
+
+        a:hover {
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.75);
+            transform: translateY(-3px);
+        }
+
+        hr {
+            margin: 40px 0;
+            border: 0;
+            height: 1px;
+            background: rgba(10, 40, 20, 0.4);
+        }
+
         h2 {
             font-size: 32px;
             margin-top: 25px;
             text-decoration: underline;
             text-underline-offset: 6px;
-            color: #0d1b0f;
-        }
-
-        hr {
-            margin: 30px 0;
-            border: 0;
-            height: 1px;
-            background: rgba(10, 40, 20, 0.3);
-        }
-
-        /* 🎨 Animated buttons that match the shifting background */
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 20px;
-            background: linear-gradient(120deg,
-                #0f7c35,
-                #28a745,
-                #5edc6e,
-                #ffe7c7,
-                #79a7d3
-            );
-            background-size: 300% 300%;
-            animation: buttonFlow 10s ease infinite;
-            color: #eaffea;
-            text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 0px 0px 12px rgba(0, 100, 30, 0.35);
-            font-weight: bold;
-            border: none;
-        }
-
-        @keyframes buttonFlow {
-            0%   { background-position: 0% 50%; }
-            50%  { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        a:hover {
-            filter: brightness(1.05);
-            box-shadow: 0px 0px 16px rgba(0, 80, 20, 0.5);
         }
     </style>
 </head>
@@ -121,38 +108,30 @@
 
 <h1>Lenka Z</h1>
 
-<div class="content-box">
+<div class="about">
+    <p>Lenka Z is a Georgian artist and content creator who immigrated to America to pursue her career in TV and Film. Her singing journey opened doors into Georgian media, such as Got Talent and The Voice, where she fell in love with television and decided to pursue media studies.</p>
 
-    <div class="about">
-        <p>Lenka Z is a Georgian artist and content creator who immigrated to America to pursue her career in TV and Film. Her singing journey opened doors into Georgian media, such as Got Talent and The Voice, where she fell in love with television and decided to pursue media studies.</p>
+    <p>As her artistic path expanded beyond performance, Lenka explored her love of content creation through audio storytelling. She films analog-style videos and records her voice to tell a story through poetry. Her focus is mainly on life, relationships, and the human mind, where inspiration can come from anything: a new movie, book, series, a news story, her friendships, and even strangers on the streets. She also experiments with photography that captures spontaneous scenery, exploring dark and light themes.</p>
 
-        <p>As her artistic path expanded beyond performance, Lenka explored her love of content creation through audio storytelling. She films analog-style videos and records her voice to tell a story through poetry. Her focus is mainly on life, relationships, and the human mind, where inspiration can come from anything: a new movie, book, series, a news story, her friendships, and even strangers on the streets. She also experiments with photography that captures spontaneous scenery, exploring dark and light themes.</p>
+    <p>Lenka balances her performance with media work, including sound, image, and storytelling. She also creates short clips that include horror themes of human nature, layered with well-known music tracks. Her media content can be found on her TikTok page, Lenka.Dormiveglia.</p>
 
-        <p>Lenka balances her performance with media work, including sound, image, and storytelling. She also creates short clips that include horror themes of human nature, layered with well-known music tracks. Her media content can be found on her TikTok page, Lenka.Dormiveglia.</p>
-
-        <p>Lenka admires the complexity of life and believes that every color it shows can serve as a canvas for her artistic journey, guiding her toward her dreams in filmmaking and directing.</p>
-    </div>
-
-    <hr>
-
-    <h2>Assignments</h2>
-
-    <a href="readings.html">Readings</a>
-
-    <a href="homework1.html">Resizing Images & Tonal Range</a>
-    <a href="homework2.html">Depth of Field</a>
-    <a href="homework3.html">Photomontage</a>
-    <a href="homework6.html">Eye Illustration</a>
-    <a href="homework5.html">Photomontage & Design</a>
-    <a href="homework7.html">Illustrated Environment</a>
-    <a href="homework8.html">Animated GIFs</a>
-    <a href="homework9.html">Data Visualization</a>
-
-    <a href="https://lenkaz826.github.io/interactivestorymedpl150/" target="_blank">
-       Interactive Story
-    </a>
-
+    <p>Lenka admires the complexity of life and believes that every color it shows can serve as a canvas for her artistic journey, guiding her toward her dreams in filmmaking and directing.</p>
 </div>
+
+<hr>
+
+<h2>Assignments</h2>
+
+<a href="readings.html">Readings</a>
+<a href="homework1.html">Resizing Images & Tonal Range</a>
+<a href="homework2.html">Depth of Field</a>
+<a href="homework3.html">Photomontage</a>
+<a href="homework6.html">Eye Illustration</a>
+<a href="homework5.html">Photomontage & Design</a>
+<a href="homework7.html">Illustrated Environment</a>
+<a href="homework8.html">Animated GIFs</a>
+<a href="homework9.html">Data Visualization</a>
+<a href="https://lenkaz826.github.io/interactivestorymedpl150/" target="_blank">Interactive Story</a>
 
 </body>
 </html>
